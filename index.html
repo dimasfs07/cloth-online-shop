@@ -4,40 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Feather Icons -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> -->
+    <script src="node_modules/feather-icons/dist/feather.js"></script>
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Cloth Online Shop</title>
 </head>
 <body>
-    <!-- start of Header -->
-    <header>
-        <div class="topnav">topnav</div>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Shop</li>
-                <li>Blog</li>
-                <li>Contact</li>
-            </ul>
+    <!-- start of Navbar -->
+
+        <nav class="navbar">
+            <a href="#" class="navbar-logo">cloth</a>
+            <div class="navbar-nav">
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="navbar-extra">
+                <a href="#" id="heart"><i data-feather="heart"></i></a>
+                <a href="#" id="shopping-bag"><i data-feather="shopping-bag"></i></a>
+            </div>
         </nav>
-    </header>
-    <!-- end of Header -->
+        
+    <!-- end of Navbar -->
 
     <!-- start of Main -->
     <main>
-        <div class="search-container">
-            <form action="">
-                <input type="text" placeholder="search.." name="search">
-                <button type="submit">search</button>
-            </form>
+     
+        <!-- search box -->
+
+        <div class="flex-container">
+            <div class="search-container">
+                <form action="">
+                    <input type="text" placeholder="search.." name="search">
+                    <button type="submit">search</button>
+                </form>
+            </div>
         </div>
+
+        <!-- end of search box -->
+
         <div class="flex-container">
             <div>picture1</div>
             <div>picture2</div>
             <div>picture3</div>
         </div>
-       <section>
-        lorem ipsum dolor sit amet
-       </section> 
+     
+        <div class="flex-container">
+            <div>picture1</div>
+            <div>picture2</div>
+            <div>picture3</div>
+        </div>
+
+        <!-- <div class="flex-container">
+            <section>
+                lorem ipsum dolor sit amet
+               </section> 
+        </div> -->
+
+       
     </main>
     <!-- end of Main -->
 
