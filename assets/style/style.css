@@ -1,11 +1,22 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
+:root {
+  --primary: #e0fbfc;
+  --bg: #5c6b73;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Fenix", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+}
 
 /* .topnav{
     background-color: #f1f1f1;
@@ -16,7 +27,6 @@
     padding: 50 50;
 } */
 
-
 /* nav li{
     display: inline;
     list-style: none;
@@ -26,78 +36,78 @@
 } */
 
 /* Navbar */
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.4rem 7%;
-    background-color: #253237;
-    border-bottom: 1px solid #f1f1f1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: #253237;
+  border-bottom: 1px solid #f1f1f1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-.navbar .navbar-logo{
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ffffff;
-
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
 }
 
-.navbar .navbar-nav a{
-    color: #ffffff;
-    display: inline-block;
-    font-size: 1.4rem;
-    margin: 0 1rem;
+.navbar .navbar-nav a {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
 }
 
-.navbar .navbar-extra a{
-    color: #ffffff;
-    margin: 0 0.5rem;
+.navbar .navbar-nav a:hover {
+  color: #c2dfe3;
+}
+.navbar .navbar-extra a {
+  color: #ffffff;
+  margin: 0 0.5rem;
 }
 
-.flex-container{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 60px 40px;
-    background-color: rgb(7, 80, 57);
-    text-align: center;
-    margin-top: 100px;
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 60px 40px;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.flex-container>div{
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+.flex-container > div {
+  background-color: #f1f1f1;
+  color: #253237;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
-.search-container{
-
-    float: right;
-    margin-bottom: 100px;
-    align-content: center;
+.search-container {
+  float: right;
+  margin-bottom: 100px;
+  align-content: center;
 }
 
-
-main{
-    background-color: azure;
-    height: 800px;
+main {
+  background-color: azure;
+  width: fit-content;
+  height: auto;
 }
 
-section{
-    margin: 80px 80px;
-    padding: 30px 30px;
-    text-align: center;
-    background-color: aliceblue;
-}
+/* section {
+  margin: 80px 80px;
+  padding: 30px 30px;
+  text-align: center;
+  background-color: aliceblue;
+} */
 
-footer{
-    background-color: aquamarine;
-    text-align: center;
+footer {
+  text-align: left;
+  justify-content: space-between;
 }
-
