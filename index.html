@@ -1,169 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fenix&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fenix&display=swap"
+      rel="stylesheet"
+    />
     <!-- Feather Icons -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> -->
     <script src="node_modules/feather-icons/dist/feather.js"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/style.css" />
     <title>Cloth Online Shop</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- start of Navbar -->
 
-        <nav class="navbar">
-            <a href="#" class="navbar-logo">cloth</a>
-            <div class="navbar-nav">
-                <a href="#">HOME</a>
-                <a href="#">SHOP</a>
-                <a href="#">BLOG</a>
-                <a href="#">CONTACT</a>
-            </div>
-            <div class="navbar-extra">
-                <a href="#" id="heart"><i data-feather="heart"></i></a>
-                <a href="#" id="shopping-bag"><i data-feather="shopping-bag"></i></a>
-            </div>
-        </nav>
-        
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">cloth</a>
+      <div class="navbar-nav">
+        <a href="#">HOME</a>
+        <a href="#">SHOP</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="heart"><i data-feather="heart"></i></a>
+        <a href="#" id="shopping-bag"><i data-feather="shopping-bag"></i></a>
+      </div>
+    </nav>
+
     <!-- end of Navbar -->
 
     <!-- start of Main -->
     <main>
-     
-        <!-- search box -->
+      <!-- search box -->
 
-        
+      <section class="search-bar">
+        <div class="search-container">
+          <form action="">
+            <input type="text" placeholder="search.." name="search" />
+            <button type="submit"><i data-feather="search"></i></button>
+          </form>
+        </div>
+      </section>
 
-        <section class="search-bar">
-            <div class="flex-container">
-                <div class="search-container">
-                    <form action="">
-                        <input type="text" placeholder="search.." name="search">
-                        <button type="submit">search</button>
-                    </form>
-                </div>
-            </div>
+      <!-- end of search box -->
 
-        </section>
+      <!-- Variant Product -->
 
-        <!-- end of search box -->
+      <div class="our-product">
+        <div class="flex-container">
+          <div>
+            <img
+              src="assets/img/black-shirt.jpg"
+              width="200px"
+              height="200px"
+              alt="t-shirt"
+            />
+            <br />
+            <span>t-shirt</span>
+          </div>
+          <div>
+            <img
+              src="assets/img/cotton-combed.png"
+              width="200px"
+              height="200px"
+              alt="garment"
+            /><br />
+            <span>garment</span>
+          </div>
 
-        <!-- Variant Product -->
+          <div>
+            <img
+              src="assets/img/kemeja.png"
+              width="200px"
+              height="200px"
+              alt="shirt"
+            /><br />
+            <span>shirt</span>
+          </div>
 
-        <section class="our-product">
-            <div class="flex-container">
-                <div>
-                    <img src="assets/img/black-shirt.jpg" width="200px" height="200px" alt="t-shirt"> <br>
-                    <span>t-shirt</span>
-                </div>
-                <div>
-                    <img src="assets/img/cotton-combed.png" width="200px" height="200px" alt="garment"><br>
-                    <span>garment</span>
-                </div>
-    
-                <div>
-                    <img src="assets/img/kemeja.png" width="200px" height="200px" alt="shirt"><br>
-                    <span>shirt</span>
-                </div>
-    
-                <div>
-                    <img src="assets/img/training-suit1.png" width="200px" height="200px" alt="training-suit"><br>
-                    <span>training suit</span>
-                </div>
-            </div>
-        </section>
-        
-     
-        <!-- end of variant product -->
+          <div>
+            <img
+              src="assets/img/training-suit1.png"
+              width="200px"
+              height="200px"
+              alt="training-suit"
+            /><br />
+            <span>training suit</span>
+          </div>
+        </div>
+      </div>
 
+      <!-- end of variant product -->
 
-        <!-- Featured Product -->
+      <!-- Featured Product -->
 
-        <section class="featured-product">
-           
-            <p>Featured Product</p>
-    
-    
-                <div class="flex-container">
-                    <div>
-                        <img src="assets/img/cotton-combed-30s-kain.jpg" width="200px" height="200px" alt="cotton-combed-30s"> <br>
-                        <span>cotton combed 30s</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>
-                    <div>
-                        <img src="assets/img/ilustasi-kain-sutra-atau-sutera.jpg" width="200px" height="200px" alt="kain-sutera"><br>
-                        <span>kain sutera</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>
-        
-                    <div>
-                        <img src="assets/img/Kain-PE-DK-002.jpg" width="200px" height="200px" alt="kain-pe"><br>
-                        <span>kain pe</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>
-        
-                    <div>
-                        <img src="assets/img/kain-fleece.jpg" width="200px" height="200px" alt="fleece"><br>
-                        <span>kain fleece</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>  
-                  
-                </div>
-    
-                <div class="flex-container">
-                    <div>
-                        <img src="assets/img/cotton-combed-30s-kain.jpg" width="200px" height="200px" alt="cotton-combed-30s"> <br>
-                        <span>cotton combed 30s</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>
-                    <div>
-                        <img src="assets/img/ilustasi-kain-sutra-atau-sutera.jpg" width="200px" height="200px" alt="kain-sutera"> <br>
-                        <span>kain sutera</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>
-        
-                    <div>
-                        <img src="assets/img/Kain-PE-DK-002.jpg" width="200px" height="200px" alt="kain-pe"> <br>
-                        <span>kain pe</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>
-        
-                    <div>
-                        <img src="assets/img/kain-fleece.jpg" width="200px" height="200px" alt="fleece"> <br>
-                        <span>kain fleece</span> <br>
-                        <span>price : start from IDR 80k</span>
-                    </div>  
-                  
-                </div>
-    
+      <section class="featured-product">
+        <p>Featured Product</p>
 
-        </section>
-       
-        
-      
+        <div class="flex-container">
+          <div>
+            <img
+              src="assets/img/cotton-combed-30s-kain.jpg"
+              width="200px"
+              height="200px"
+              alt="cotton-combed-30s"
+            />
+            <br />
+            <span>cotton combed 30s</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
+          <div>
+            <img
+              src="assets/img/ilustasi-kain-sutra-atau-sutera.jpg"
+              width="200px"
+              height="200px"
+              alt="kain-sutera"
+            /><br />
+            <span>kain sutera</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
 
-        <!-- End of Featured Product -->
+          <div>
+            <img
+              src="assets/img/Kain-PE-DK-002.jpg"
+              width="200px"
+              height="200px"
+              alt="kain-pe"
+            /><br />
+            <span>kain pe</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
 
-        <!-- <div class="flex-container">
+          <div>
+            <img
+              src="assets/img/kain-fleece.jpg"
+              width="200px"
+              height="200px"
+              alt="fleece"
+            /><br />
+            <span>kain fleece</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div>
+            <img
+              src="assets/img/cotton-combed-30s-kain.jpg"
+              width="200px"
+              height="200px"
+              alt="cotton-combed-30s"
+            />
+            <br />
+            <span>cotton combed 30s</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
+          <div>
+            <img
+              src="assets/img/ilustasi-kain-sutra-atau-sutera.jpg"
+              width="200px"
+              height="200px"
+              alt="kain-sutera"
+            />
+            <br />
+            <span>kain sutera</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
+
+          <div>
+            <img
+              src="assets/img/Kain-PE-DK-002.jpg"
+              width="200px"
+              height="200px"
+              alt="kain-pe"
+            />
+            <br />
+            <span>kain pe</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
+
+          <div>
+            <img
+              src="assets/img/kain-fleece.jpg"
+              width="200px"
+              height="200px"
+              alt="fleece"
+            />
+            <br />
+            <span>kain fleece</span> <br />
+            <span>price : start from IDR 80k</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- End of Featured Product -->
+
+      <!-- <div class="flex-container">
             <section>
                 lorem ipsum dolor sit amet
                </section> 
         </div> -->
-
-       
     </main>
     <!-- end of Main -->
 
     <!-- start of Footer -->
+    <section class="logo-in-footer">
+      <img src="assets/img/logo.jpg" alt="logo-cloth" />
+    </section>
+
+    <div class="information-section">
+      <div class="flex-container">
+        <div class="contact">
+          <ul>
+            <li>
+              <p><i data-feather="map-pin"></i>Address : Granting Baru 1</p>
+            </li>
+            <li>
+              <p><i data-feather="phone"></i> Phone : 0857-xxxx-xxxx</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p><b>Useful Links</b></p>
+          <br />
+          <p><a href="#">About US</a></p>
+          <p><a href="#">About Our Shop</a></p>
+          <p><a href="#">Secure Shopping</a></p>
+          <p><a href="#">Delivery Information</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">Our Sitemap</a></p>
+        </div>
+        <div>
+          <p><a href="#">Who We Are</a></p>
+          <p><a href="#">Our Services</a></p>
+          <p><a href="#">Projects</a></p>
+          <p><a href="#">Innovation</a></p>
+          <p><a href="#">Testimonial</a></p>
+        </div>
+      </div>
+    </div>
+
     <footer>
-        <div class="flex-container">
+      <!-- <div class="flex-container">
             <div>
                 <img src="assets/img/logo.jpg" alt="logo-cloth">
                 <p><address>address : Granting Baru 1</address></p>
@@ -186,14 +272,14 @@
                 <p><a href="#">testimonial</a></p>
           
             </div>
-        </div>
-        <p>all rights reserved</p>
+        </div> -->
+      <p>Cloth.inc &#169 all rights reserved</p>
     </footer>
     <!-- end of Footer -->
 
     <!-- Feather Icons -->
     <script>
-        feather.replace()
-      </script>
-</body>
+      feather.replace();
+    </script>
+  </body>
 </html>

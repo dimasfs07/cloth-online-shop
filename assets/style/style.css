@@ -71,6 +71,23 @@ body {
   margin: 0 0.5rem;
 }
 
+.search-bar > .search-container > form {
+  padding: 20px;
+  padding-top: 100px;
+  margin: 20px;
+}
+
+.search-bar > .search-container > form > input {
+  height: 50px;
+  width: 690px;
+  margin-left: 340px;
+}
+
+.search-bar > .search-container > form > button {
+  height: 50px;
+  width: 90px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -80,19 +97,47 @@ body {
 }
 
 .flex-container > div {
-  background-color: #f1f1f1;
-  color: #253237;
-  margin: 10px;
-  padding: 20px;
+  background-color: none;
+  color: var(--primary);
+  /* margin: 10px; */
+  padding: 10px;
+  padding-right: 100px;
   font-size: 30px;
   text-align: center;
   justify-content: space-between;
 }
 
-.search-container {
-  float: right;
-  margin-bottom: 100px;
-  align-content: center;
+.flex-container > div > p {
+  font-family: "Fenix";
+  font-size: 20px;
+  text-align: start;
+}
+
+.flex-container > div > span {
+  font-family: "Fenix";
+  font-size: 20px;
+  color: black;
+}
+
+/* .our-product {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 60px 40px;
+  margin-top: 20px;
+} */
+
+/* .our-product > .flex-container-product > div {
+  color: black;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  justify-content: space-between;
+} */
+
+.information-section > .flex-container > .contact > ul > li {
+  list-style: none;
+  font-family: "Fenix";
+  font-size: 20px;
 }
 
 main {
@@ -115,7 +160,12 @@ main {
   font-size: 60px;
 }
 
+.logo-in-footer > img {
+  padding: 30px 30px 0px 50px;
+}
+
 footer {
-  text-align: left;
+  padding-bottom: 20px;
+  text-align: center;
   justify-content: space-between;
 }
