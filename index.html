@@ -26,6 +26,7 @@
       <div class="navbar-nav">
         <a href="#">HOME</a>
         <a href="#">SHOP</a>
+        <a href="#">PAGE</a>
         <a href="#">BLOG</a>
         <a href="#">CONTACT</a>
       </div>
@@ -40,18 +41,26 @@
 
     <!-- start of Main -->
     <main>
-      <!-- search box -->
+      <!-- search bar start -->
 
       <section class="search-bar">
         <div class="search-container">
+          
           <form action="">
+            <select name="dropdown-list" id="list" class="dropdown-list">
+              <option value="All Categories">All Categories</option>
+              <option value="T-Shirt">T-Shirt</option>
+              <option value="Garment">Garment</option>
+              <option value="Shirt">Shirt</option>
+              <option value="Training Suit">Training Suit</option>
+            </select>
             <input type="text" placeholder="search.." name="search" />
             <button type="submit"><i data-feather="search"></i></button>
           </form>
         </div>
       </section>
 
-      <!-- end of search box -->
+      <!-- end of search bar -->
 
       <!-- Carousel -->
       <div class="carousel-container">

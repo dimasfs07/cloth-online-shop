@@ -93,6 +93,11 @@ body {
   display: none;
 }
 
+.dropdown-list {
+  height: 50px;
+  width: 120px;
+}
+
 .search-bar > .search-container > form {
   padding: 20px;
   padding-top: 100px;
@@ -102,7 +107,7 @@ body {
 .search-bar > .search-container > form > input {
   height: 50px;
   width: 690px;
-  margin-left: 340px;
+  padding-left: 240px;
 }
 
 .search-bar > .search-container > form > button {
