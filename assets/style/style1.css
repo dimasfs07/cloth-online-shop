@@ -1,0 +1,23 @@
+:root {
+  --primary: #e0fbfc;
+  --bg: #5c6b73;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Fenix", "Audrey", sans-serif;
+  background-color: var(--bg);
+  color: #ffffff;
+}
+
+section {
+  padding-top: 3rem;
+}

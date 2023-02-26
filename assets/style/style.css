@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: "Fenix", sans-serif;
+  font-family: "Fenix", "Audrey", sans-serif;
   background-color: var(--bg);
   color: #ffffff;
 }
@@ -37,6 +37,7 @@ body {
 
 /* Navbar */
 .navbar {
+  font-family: "Audrey";
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,12 +102,13 @@ body {
 .search-bar > .search-container > form {
   padding: 20px;
   padding-top: 100px;
-  margin: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search-bar > .search-container > form > input {
   height: 50px;
-  width: 690px;
+  width: 190px;
   padding-left: 240px;
 }
 

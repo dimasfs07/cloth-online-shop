@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts -->
+
+    <link href="https://fonts.cdnfonts.com/css/audrey" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,13 +18,15 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> -->
     <script src="node_modules/feather-icons/dist/feather.js"></script>
     <!-- Styles -->
-    <link rel="stylesheet" href="assets/style/style.css" />
+    <link rel="stylesheet" href="assets/style/style1.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Cloth Online Shop</title>
   </head>
   <body>
     <!-- start of Navbar -->
 
-    <nav class="navbar">
+    <!-- <nav class="navbar">
       <a href="#" class="navbar-logo">cloth</a>
       <div class="navbar-nav">
         <a href="#">HOME</a>
@@ -35,6 +40,47 @@
         <a href="#" id="shopping-bag"><i data-feather="shopping-bag"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+    </nav> -->
+
+    <nav class="navbar fixed-top" style="background-color: #5c6b73;">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="font-family:'Audrey'; color: #ffffff; font-weight: 400;" href="#">Cloth</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="nav flex-column flex-sm-row nav-pills nav-justified">
+        
+              <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="#">HOME</a>
+        
+           
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">SHOP</a>
+          
+
+           
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">PAGE</a>
+          
+
+            
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">BLOG</a>
+            
+
+        
+              <a class="flex-sm-fill text-sm-center nav-link" href="#">CONTACT</a>
+           
+              <a class="flex-sm-fill text-sm-center nav-link" href="#" id="heart"><i data-feather="heart"></i></a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="#" id="shopping-bag"><i data-feather="shopping-bag"></i></a>
+          <a class="flex-sm-fill text-sm-center nav-link" href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+
+          </ul>
+        </div>
+
+        <div id="navbar-extra" class="nav-fill">
+          
+        </div>
+
+
+      </div>
     </nav>
 
     <!-- end of Navbar -->
@@ -43,8 +89,8 @@
     <main>
       <!-- search bar start -->
 
-      <section class="search-bar">
-        <div class="search-container">
+      <section id="search-bar" style="padding-bottom: 20rem; padding-top: 5rem;">
+        <!-- <div class="search-container">
           
           <form action="">
             <select name="dropdown-list" id="list" class="dropdown-list">
@@ -57,13 +103,35 @@
             <input type="text" placeholder="search.." name="search" />
             <button type="submit"><i data-feather="search"></i></button>
           </form>
+        </div> -->
+
+        <div class="container">
+          <div class="col">
+            <div class="row text-center pb-5">
+              <h2>Search</h2>
+            </div>
+            
+            <div class="input-group">
+              <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+                <option selected>Choose...</option>
+                <option value="1">All Categories</option>
+                <option value="2">T-Shirt</option>
+                <option value="3">Garment</option>
+                <option value="4">Shirt</option>
+                <option value="5">Training Suit</option>
+              </select>
+              <button class="btn btn-outline-secondary" type="button"><i data-feather="search"></i></button>
+            </div>
+
+
+          </div>
         </div>
       </section>
 
       <!-- end of search bar -->
 
       <!-- Carousel -->
-      <div class="carousel-container">
+      <!-- <div class="carousel-container">
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
           <img src="assets/img/carousel/carousel-1.png" style="width:100%">
@@ -92,12 +160,35 @@
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
+      </div> -->
+
+      <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/carousel/carousel-1.png" class="d-block w-100" alt="carousel-1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel/carousel-2.png" class="d-block w-100" alt="carousel-2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/carousel/carousel-3.png" class="d-block w-100" alt="carousel-3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
+
       <!-- end of Carousel -->
 
       <!-- Variant Product -->
 
-      <div class="our-product">
+      <!-- <div class="our-product">
         <div class="flex-container">
           <div>
             <img
@@ -139,13 +230,51 @@
             <span>training suit</span>
           </div>
         </div>
-      </div>
+      </div> -->
+
+      <section id="variant-product" style="padding-bottom: 20rem;">
+        <div class="container">
+          <div class="row text-center mb-3 pb-5">
+            <div class="col"><h2> Variant Product</h2></div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/black-shirt.jpg" class="card-img-top" alt="black shirt">
+              </div>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/cotton-combed-30s-kain.jpg" class="card-img-top" alt="black shirt">
+              </div>
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/kemeja.png" class="card-img-top" alt="black shirt">
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div class="col-md-4 mb-3">
+              <div class="card" style="width: 18rem;">
+                <img src="assets/img/training-suit1.png" class="card-img-top" alt="black shirt">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- end of variant product -->
 
       <!-- Featured Product -->
 
-      <section class="featured-product">
+      <!-- <section class="featured-product">
         <p>Featured Product</p>
 
         <div class="flex-container">
@@ -252,21 +381,28 @@
             <span>price : start from IDR 80k</span>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- End of Featured Product -->
 
     </main>
     <!-- end of Main -->
 
-    <!-- start of Footer -->
+  <!-- start of information -->
     <section class="logo-in-footer">
       <img src="assets/img/logo.jpg" alt="logo-cloth" />
     </section>
+    <div>
+      <ul>
+        <li>Address : Jln. Granting Baru 1</li>
+        <li>Phone   : +62857-xxxx-xxxx</li>
+        <li>Email   : cloth@gmail.id</li>
+      </ul>
+    </div>
 
-    <div class="information-section">
-      <div class="flex-container">
-        <div class="contact">
+    <!-- <div id="information" class="">
+      <div class="">
+        <div class="">
           <ul>
             <li>
               <p><i data-feather="map-pin"></i>Address : Granting Baru 1</p>
@@ -294,9 +430,43 @@
           <p><a href="#">Testimonial</a></p>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <footer>
+    <table style="width:30%">
+    <tr>
+      <th>Useful link</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><a href="#">About Us</a></td>
+      <td><a href="#">Who We Are</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">About Our Shop</a></td>
+      <td><a href="#">Our Services</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Secure Shopping</a></td>
+      <td><a href="#">Projects</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Delivery Information</a></td>
+      <td><a href="#">Contact</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Privacy Policy</a></td>
+      <td><a href="#">Innovation</a></td>
+    </tr>
+    <tr>
+      <td><a href="#">Our Sitemap</a></td>
+      <td><a href="#">Testimonial</a></td>
+    </tr>
+    </table>
+
+    <!-- end of information -->
+
+  <!-- start of Footer -->
+    <footer class="text-center pb-5" style="background-color: #253237 ; font-family: 'Fenix'; color: #ffffff;">
       <p>Cloth.inc &#169 all rights reserved</p>
     </footer>
     <!-- end of Footer -->
@@ -307,6 +477,8 @@
     </script>
 
     <!-- Script -->
-    <script src="js/script.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
